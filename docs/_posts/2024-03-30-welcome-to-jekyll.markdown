@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "SUCK BIG DICK ALBERSITO!"
+title:  "Understanding the Housing Market of Copenhagen - Exam Project - s194655, s194361"
 date:   2024-03-30 12:21:56 +0100
 categories: jekyll update
 ---
