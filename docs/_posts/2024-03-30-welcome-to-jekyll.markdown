@@ -10,7 +10,7 @@ In this project we will take a look at the Copenhagen residential prices from 20
 As far as we know, a comprehensive dataset of all housing sales from 2000 - 2024 is not publicly available. To remedy this we have opted to scrape our data from "boligsiden.dk". Scraping from this side gives us access to variables from Bygnings og Bolig-registeret(BBR). In total we have gathered 2889191 recorded sales from the municipalities of Copenhagen and Frederiksberg. For each recorded sale we obtain 5 variables: longitude, latitude, neighbourhood, date and squaremeterprice. Furthermore we have also obtained some shapefiles describing the neighbourhood borders, in order to produce visualizations that highlight the price change in the different regions of the city
 
 Upon first inspection, it seems that there are some extreme outliers in the data.
-![BoxPlot after outlier removal](/BoksPlot_3_procent.png)
+![BoxPlotremoval](/BoksPlot_3_procent.png)
 
 
 
