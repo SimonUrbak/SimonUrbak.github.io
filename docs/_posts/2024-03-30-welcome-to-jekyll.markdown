@@ -1,18 +1,18 @@
 ---
 layout: post
 title:  "Understanding the Housing Market of Copenhagen - Exam Project - s194655, s194361"
-date:   2024-03-30 12:21:56 +0100
+date:   2024-05-07 12:13:56 +0100
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+In this project we will take a look at the Copenhagen residential prices from 2000 to 2024. The aim is to gain insight into how the housing prices have changed over time and across space. Notably some important events are contained within our temporal period, mainly the 2008 economic crash and the covid-19 pandemic. 
 
-Jekyll requires blog post files to be named according to the following format:
 
-`YEAR-MONTH-DAY-title.MARKUP`
+As far as we know, a comprehensive dataset of all housing sales from 2000 - 2024 is not publicly available. To remedy this we have opted to scrape our data from "boligsiden.dk". Scraping from this side gives us access to variables from Bygnings og Bolig-registeret(BBR). In total we have gathered 2889191 recorded sales from the municipalities of Copenhagen and Frederiksberg. For each recorded sale we obtain 5 variables: longitude, latitude, neighbourhood, date and squaremeterprice. Furthermore we have also obtained some shapefiles describing the neighbourhood borders, in order to produce visualizations that highlight the price change in the different regions of the city
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Upon first inspection, it seems that there are some extreme outliers in the data.
+![BoxPlot after outlier removal](/BoksPlot_3_procent.png)
 
-Jekyll also offers powerful support for code snippets:
+
 
 {% highlight ruby %}
 def print_hi(name)
